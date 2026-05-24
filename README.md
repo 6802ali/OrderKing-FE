@@ -112,7 +112,6 @@ Responsibilities:
 - Create customer
 - Update customer
 - Delete customer
-- JWT token handling
 - API request handling
 
 ---
@@ -165,22 +164,6 @@ GET /customers/{id}
 POST /customers
 PUT /customers/{id}
 DELETE /customers/{id}
-```
-
----
-
-## JWT Authentication
-
-The application uses **JWT Authentication**.
-
-After successful login:
-
-- JWT token is retrieved from backend
-- Token is stored in `ApiClient`
-- Protected requests automatically send:
-
-```http
-Authorization: Bearer YOUR_JWT_TOKEN
 ```
 
 ---
@@ -293,7 +276,6 @@ or your application's main entry class.
 ✅ Add Customer Form  
 ✅ Edit Customer Form  
 ✅ Delete Customer  
-✅ JWT Authentication  
 ✅ Backend REST API Integration  
 ✅ Pagination Support  
 ✅ Customer Search Support  
